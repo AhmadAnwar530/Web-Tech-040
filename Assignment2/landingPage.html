@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingPage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="landingpage.js"></script>
+    <title>LandingPage</title>
+</head>
+<body style="background-color: black;">
+    <section id="header">
+        <div class="navbar">
+            <div id="logobox">
+         <a id="logo" href=""><strong>g</strong></a>
+        </div>
+        <div>
+            <ul id="list">  
+                <li><a href="#footer"><img class="img" width="25px" height="25px" src="icons8-search-50.png" alt=""></a></li>
+                <li><a href="#newArrival"><img class="img" width="25px" height="25px" src="icons8-shopping-bag-48.png" alt=""></a></li>
+                <li><div id="LoginBox"><a id="Login" href="login.html">Login</a></div></li>
+                <li><div id="barbox"><a href="newPage.html"><img src="icons8-menu-bar-24.png" alt=""></a></div></li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="content">
+        <div id="contentbox">
+            <br><br>
+            <div class="sofaBox">
+                <h1 class="content"> <b> Sofa<br>Collection</b></h1>
+                <br>
+                <button onclick="window.location.href='shop.html';" class="button"><b>SHOP NOW</b></button>
+            </div>
+            <img class="img1" width="500px" height="200px" src="download.png" alt="">
+        </div>
+
+        <div id="contentbox1">
+                <br><br>
+                <div class="sofaBox">
+                    <h1 class="content"> <b> Chair<br>Collection</b></h1>
+                    <br>
+                    <button  onclick="window.location.href='shop.html';" class="button"><b>SHOP NOW</b></button>
+                </div>
+                <img class="img1" width="500px" height="200px" src="download (1).png" alt="">
+        </div>
+
+        <div id="contentbox2">
+            <br><br>
+            <div class="sofaBox">
+                <h1 class="content"> <b>Lamp<br>Collection</b></h1>
+                <br>
+                <button  onclick="window.location.href='shop.html';" class="button"><b>SHOP NOW</b></button>
+            </div>
+            <img class="img1" width="500px" height="200px" src="download (2).png" alt="">
+    </div>
+        <br><br><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h3 class="fontGrey"><b>Best</b></h3><p class="fontStrong"><b>Furniture in Town</b></p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p class="fontGrey1">Since 1985, we've created extraordinary products.Our</p><p class="fontStrong1"><b>commitment
+                    is to quality,</b></p><p class="fontGrey1">& we won't be satisfied until you are. Every product is</p><p class="fontStrong1"><b>crafted with love & care.</b></p>
+                </div> 
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div><h1 id="newArrival" ><b>New Arrivals</b></h1></div>
+        <br><br><br><br>
+        <div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-12"><div class="salebox">
+                    <img width="260px" height="360px" src="birdlamp.jpg" alt="">
+                </div></div>
+				<div class="col-lg-3 col-md-6 col-sm-12"><div class="salebox">
+                    <img id="imgPos" width="260px" height="200px" src="moss bench.jpg" alt="">
+                </div></div>
+                <div class="col-lg-3 col-md-6 col-sm-12"><div class="salebox">
+                    <img id="imgPos1" width="150px" height="300px" src="sineta lamp.png" alt="">
+                </div></div>
+				<div class="col-lg-3 col-md-6 col-sm-12"><div class="salebox">
+                    <img id="imgPos" width="260px" height="200px" src="grono.jpg" alt="">
+                </div></div>
+                </div>
+                <br>
+                <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12"><p class="fontStrong2"><b>Bird Lamp<br><p class="fontGrey2">$320</p></b></p><button type="button" onclick="addtocart()" class="button1"><b>Add to Cart</b></button></div>
+                <div class="col-lg-3 col-md-6 col-sm-12"><p class="fontStrong2"><b>Moss Bench<br><p class="fontGrey2">$500</p></b></p><button type="button" onclick="addtocart()" class="button1"><b>Add to Cart</b></button></div>
+                <div class="col-lg-3 col-md-6 col-sm-12"><p class="fontStrong2"><b>Sineta Lamp<br><p class="fontGrey2">$930</p></b></p><button type="button" onclick="addtocart()" class="button1"><b>Add to Cart</b></button></div>
+                <div class="col-lg-3 col-md-6 col-sm-12"><p class="fontStrong2"><b>Grono Lamp<br><p class="fontGrey2">$880</p></b></p><button type="button" onclick="addtocart()" class="button1"><b>Add to Cart</b></button></div>
+                </div>
+                </div>
+    </section>
+    <br><br><br><br><br><br>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 element">
+                    <h1 id="footerE">Ahmad <br>Anwar</h1>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 element">
+                    <ul>
+                        <li>ahmadanwar20184@gmail.com</li>
+                        <li>+9203087820939</li>
+                        <li>Iqbal Town,Lahore</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 element">
+                    <li><a href="">About US</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Know More</a></li>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 element"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

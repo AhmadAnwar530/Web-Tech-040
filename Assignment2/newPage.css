@@ -1,0 +1,26 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: white;
+    font-size: 35px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.navbar li a{
+    list-style: none;
+    text-decoration: none;
+    text-decoration-style:none;
+    color: white;
+   
+}
