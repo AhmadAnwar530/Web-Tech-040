@@ -1,0 +1,54 @@
+*{
+    font-family: sans-serif;
+}
+
+.box1{
+    border: solid rgb(235, 232, 232) 2px;
+}
+
+.hr{
+    border: solid rgb(235, 232, 232) 2px;
+}
+
+.bxContent{
+    color: darkslategray; 
+    font-size: 12px;
+}
+.heading{
+    font-size: 20px;
+}
+
+.boxft{
+    border: 2px solid rgb(235, 232, 232);
+    width: 100%;
+    height: 200px;
+    background-color: rgb(129, 159, 201);
+}
+
+.row{
+    margin: 0px;
+}
+
+.d3{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-left: 20px;
+}
+
+.d4{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-left: 20px;
+}
+
+.v1{
+    border-left: 2px solid rgb(109, 131, 176) ;
+    height: 5px;
+    padding: 5px;
+}
+
+#jq1{
+    text-decoration: none;
+}
