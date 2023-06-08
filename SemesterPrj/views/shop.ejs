@@ -1,0 +1,33 @@
+<%- include('./layouts/top') %>
+
+<h1 style="color: white; margin-left: 555px; overflow: hidden;">Shop</h1>
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <% products.forEach(product => { %>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img height="300px" src="<%= product.image %>" class="card-img-top" alt="Product Image">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><%= product.name %></li>
+            <li class="list-group-item">Price: $<%= product.price %></li>
+            <li class="list-group-item"><%= product.review %></li>
+          </ul>
+          <div class="card-body">
+            <form action="/shop/delete/<%= product._id %>" method="POST">
+              <button type="submit" class="btn btn-dark">Dislike</button>
+            </form>
+            <a href="/shop/edit/<%= product._id %>" class="btn btn-dark">Review</a>
+            <form action="/cart/add" method="POST" style="display: inline;">
+              <input type="hidden" name="productId" value="<%= product._id %>">
+              <button type="submit" class="btn btn-dark">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</div>
+
+<%- include('./layouts/footer') %>

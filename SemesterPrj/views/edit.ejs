@@ -1,0 +1,80 @@
+<%- include('./layouts/top') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/edit.css" type="text/css">
+  <title>Edit Product</title>
+</head>
+<body>
+  <div class="edit-container">
+    <h1>Edit Product</h1>
+    <form action="/shop/edit/<%= product._id %>" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="<%= product.name %>" required>
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" value="<%= product.price %>" required>
+      <button type="submit">Update</button>
+    </form>
+    <hr>
+    <h2>Add Review</h2>
+    <form action="/shop/add-review/<%= product._id %>" method="POST">
+      <label for="review">Review:</label>
+      <textarea id="review" name="review" required></textarea>
+      <button type="submit">Add Review</button>
+    </form>
+  </div>
+</body>
+</html>
+<%- include('./layouts/footer') %>
+
+<style>
+    /* edit.css */
+
+.edit-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  hr {
+    margin-bottom: 20px;
+  }
+  
+</style>
