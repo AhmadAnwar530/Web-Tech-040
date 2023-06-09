@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: 'Quicksand', sans-serif;
     color: white;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     width: 10px;

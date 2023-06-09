@@ -129,28 +129,35 @@
 }
 
 .img1{
-	animation: animation1 4s ease-in-out infinite;
+	
     position: absolute;
+    transition: width 1s, height 1s;
     top: 10px;
     right: 0px;
     width: 600px;
     height: 280px;
     overflow-y: hidden;
+    
+}
+
+.img1:hover{
+    width: 650px;
+    height: 300px;
+    animation: animation1 3s ease-in-out;
 }
 
 @keyframes animation1{
 	0%{
 		transform: rotateZ(0deg);
 	}
-    50%{
-		transform: rotateZ(15deg);
+    100%{
+		transform: rotateZ(10deg);
 		
-	}
-	100%{
-		transform: rotateZ(0deg);
 	}
 	
 }
+
+  
 
 .sofaBox{
     width: 400px;
@@ -173,14 +180,15 @@
     background-color: black;
     color: white;
     margin-left: 70px;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0;
     font-size: 25px;
     border-radius: 50px;
+    overflow: hidden;
 }
 
 .button:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 28px;
 }
 .salebox{
