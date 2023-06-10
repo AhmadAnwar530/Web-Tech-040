@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+        <tr>Image</tr>
+        <tr>Name</tr>
+        <tr>Price</tr>
+        <tr>Review</tr>
+    </thead>
+    <tbody>
+        <% products.forEach(product => { %>
+          <tr>
+              <td> <a class="btn btn-dark" href="/products/cart/remove/<%=product._id  %>">Remove</a></td>
+              <td><%= product.name %></td>
+              <td><%= product.price %></td>
+              <td><%= product.review %></td>
+              <td><img width="300px" height="300px" src="<%= product.image %>"></td>
+          </tr>"
+        <% }) %>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td><%= total %></td>
+        </tr>
+    </tfoot>
+</table>

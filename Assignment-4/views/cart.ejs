@@ -8,11 +8,12 @@
     <tbody>
         <% products.forEach(product => { %>
           <tr>
-              <td> <a class="btn btn-dark" href="/products/cart/remove/<%=product._id  %>">Remove</a> <%= product.image %></td>
+              <td> <a class="btn btn-dark" href="/products/cart/remove/<%=product._id  %>">Remove</a></td>
               <td><%= product.name %></td>
               <td><%= product.price %></td>
               <td><%= product.review %></td>
-          </tr>
+              <td><img width="300px" height="300px" src="<%= product.image %>"></td>
+          </tr>"
         <% }) %>
     </tbody>
     <tfoot>
